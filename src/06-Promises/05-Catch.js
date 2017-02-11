@@ -15,7 +15,7 @@ function waitAsecond(seconds) {
     })
 }
 
-waitAsecond(2)
+waitAsecond(1)
     .then(waitAsecond)
     .then(function (seconds) {
         console.log(seconds);
