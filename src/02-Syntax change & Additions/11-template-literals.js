@@ -36,3 +36,9 @@ console.log(name);
 //   <li>second</li>
 // </ol>
 // `.trim());
+
+$('#list').append( `
+   there are ${name} <br> item
+    in your basket, <em>${basket.onSale}</em>
+  are on sale!
+`);
