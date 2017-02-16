@@ -3,16 +3,16 @@
  */
 //syntax changes & extensions 语法的改变和拓展
 
-var name = "lixu";
-console.log(name);
+// var name = "lixu";
+// console.log(name);
 
 let age = 20;
-//let声明的变量拥有块级作用域。
+//let声明的变量拥有块级作用域。 所以以下输出的age，一个是22，一个是20；
 if(true){
     let age = 22;
     console.log(age);
 }
-
+console.log(age);
 
 
 
