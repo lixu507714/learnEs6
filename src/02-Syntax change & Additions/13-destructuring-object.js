@@ -29,3 +29,10 @@ let dogs = {
 
 let {type,many} = dogs;
 console.log(type,many); // animal 1
+
+
+function animals(...types){
+    console.log(types)
+}
+animals('cat', 'dog', 'fish') ; // ["cat", "dog", "fish"]
+// 如果不用ES6的话，我们则得使用ES5的arguments。
