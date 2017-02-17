@@ -13,3 +13,19 @@ let it = select();
 console.log(it.next());
 console.log(it.next());
 console.log(it.next());
+
+
+function* fibs() {
+    let a = 0;
+    let b = 1;
+    while (true) {             // 循环
+        yield a;
+        [a, b] = [b, a + b];
+    }
+}
+
+let [first, second, third, fourth, fifth, sixth] = fibs();    // ?????
+console.log(second);
+
+let [foo = true] = [];
+console.log(foo);
