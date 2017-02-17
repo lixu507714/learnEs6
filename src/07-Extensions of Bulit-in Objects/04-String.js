@@ -16,3 +16,9 @@ console.log(name.startsWith('Max')); // true
 console.log(name.startsWith('xi')); // false
 console.log(name.endsWith('an')); // true
 
+console.log(`111222`);
+
+// let a = 2;
+// let b = 3;
+//
+// tag`hello ${a+b} world ${a*b}`;

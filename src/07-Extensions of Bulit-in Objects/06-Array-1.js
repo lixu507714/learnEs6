@@ -41,5 +41,15 @@ function findCherries(fruit){
 
 console.log(inventory.find(findCherries)); // { name: 'cherries', quantity: 4 }
 
+let arrayLike = {
+    '0':'as',
+    '1':'asas',
+    '2':'asasasas',
+    length : 3
+};
+
+let arrs = Array.from(arrayLike);
+console.log(arrs);
 
 
+// Array.from (arrayLike,x=>x*x);
