@@ -2,7 +2,7 @@
  * Created by lixu on 17/2/9.
  */
 // 优势
-let symbol = Symbol.for('sge');
+let symbol = Symbol.for('age');
 
 let obj = {
     name : "lx",
@@ -10,7 +10,7 @@ let obj = {
 };
 
 function test(obj){
-    let anotherSymbol = Symbol.for('sge');
+    let anotherSymbol = Symbol.for('age');
     obj[anotherSymbol] = 22;
 }
 

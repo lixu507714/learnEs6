@@ -11,7 +11,7 @@
 // 是否已经存在，如果不存在才会新建一个值。比如，如果你调用Symbol.for("cat")30次，每次都会返回同一个
 // Symbol 值，但是调用Symbol("cat")30次，会返回30个不同的Symbol值。
 
-let symbol1 = Symbol.for('sge');
+// let symbol1 = Symbol.for('sge');
 let symbol2 = Symbol.for('sge');
 
 let obj = {

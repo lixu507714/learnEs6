@@ -19,7 +19,7 @@ deck.set('kc',cardKing); // 成员的值都是唯一的，没有重复的值。�
 console.log(deck.size); // 2
 
 
-console.log(deck.delete('lx')); // true
+// console.log(deck.delete('lx')); // true
 // console.log(deck.add('lxxx')); // ?????????????
 
 console.log(deck.get('lx')); // undefined  ?????????????

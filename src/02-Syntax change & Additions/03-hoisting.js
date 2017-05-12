@@ -3,7 +3,7 @@
  */
 
 //变量提升
-function as(){
+function as() {
     age = 11;
 }
 let age;

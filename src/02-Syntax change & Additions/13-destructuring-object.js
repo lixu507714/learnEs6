@@ -57,7 +57,7 @@ function obj1() {
     }
 }
 
-let {as1,bs1} = obj1();
-console.log(as1,bs1);
+let {as1, bs1} = obj1();
+console.log(as1, bs1);
 
 

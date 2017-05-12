@@ -62,3 +62,6 @@ Object.setPrototypeOf(person,boss);  // setPrototypeOf  Object.setPrototypeOf(ob
 console.log(person.__proto__ == boss);  // true  name :'anna'
 console.log(boss.name);
 
+
+
+

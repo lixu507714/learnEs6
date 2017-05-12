@@ -8,7 +8,7 @@
 
 let age = 20;
 //let声明的变量拥有块级作用域。 所以以下输出的age，一个是22，一个是20；
-if(true){
+if (true) {
     let age = 22;
     console.log(age);
 }
@@ -16,8 +16,8 @@ console.log(age);
 
 
 var a = [];
-for(let i=0;i<10;i++){
-    a[i] = function(){
+for (let i = 0; i < 10; i++) {
+    a[i] = function () {
         console.log(i);
     }
 }
@@ -41,7 +41,7 @@ var z = 1; // undefined
 var tem = new Date();
 function s() {
     console.log(tem);
-    if(false){
+    if (false) {
         var tem = '123';
     }
 }

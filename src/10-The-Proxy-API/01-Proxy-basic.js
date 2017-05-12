@@ -9,7 +9,7 @@
 // 有一些对象是可以被调用的函数或构造函数。 它可以接受两个参数：目标对象（target）与句柄对象（handler）。请看一个简单的示例：
 let person = {
     name: 'lx',
-    age :11
+    age: 11
 };
 // get方法用于拦截某个属性的读取操作。
 let handler = {
@@ -18,14 +18,14 @@ let handler = {
     },
 
     // set方法用来拦截某个属性的赋值操作,get和set方法，就可以做到防止这些内部属性被外部读写。
-    set: function(target,property,value){
-        if(value.length >=2){
-            Reflect.set(target,property,value);
+    set: function (target, property, value) {
+        if (value.length >= 2) {
+            Reflect.set(target, property, value);
         }
     }
 };
 
-let proxy = new Proxy(person,handler);
+let proxy = new Proxy(person, handler);
 proxy.name = 'q1111';
 console.log(proxy.name);
 

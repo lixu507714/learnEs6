@@ -19,11 +19,11 @@
 // setTimeout(() => console.log(0),3000);
 
 
-
 class Animal {
-    constructor (){
+    constructor() {
         this.name = 'dog';
     }
+
     // says(say){
     //     let that = this;
     //     setTimeout(function(){ // setTimeout中的this指向的是全局对象。
@@ -32,21 +32,20 @@ class Animal {
     //     },1000)
     // }
 
-    says(say){
+    says(say) {
         let that = this;
-        setTimeout(function(){ // setTimeout中的this指向的是全局对象。
+        setTimeout(function () { // setTimeout中的this指向的是全局对象。
             // 1:第一种是将this传给self,再用self来指代this.2:第二种方法是用bind(this)
-            console.log(that.name + ' says '+say);
-        }.bind(this),1000)
+            console.log(that.name + ' says ' + say);
+        }.bind(this), 1000)
     }
 }
 let animal = new Animal();
 animal.says('English');
 
 
-
 class Trial {
-    constructor(){
+    constructor() {
         this.type = 'bike';
     }
 
